@@ -1,2 +1,2 @@
-# myblog
-This is my first blog
+# My Blog
+This is my first blog developed using Ruby on Rails.
