@@ -1,0 +1,91 @@
+<div id="addvocab" class="modal">
+  
+  <!-- Content -->
+  <div class="modal-content">
+
+    <!-- Container -->
+    <div class="col s12">
+
+      <!-- Form Container -->
+      <div class="row collapse-margin-bottom">
+        
+        <!-- Form -->
+        <form accept-charset="UTF-8" class="col s12" 
+              action="" method="POST">
+
+          <!-- CSRF -->
+          <div style="display:none">
+            <input name="utf8" type="hidden" value="&#x2713;" />
+            <input name="authenticity_token" type="hidden" 
+                   value="x37DrAAwyIIb7s+w2+AdoCR8cAJIpQhIetKRrPgG5VA=" />
+          </div>
+          <!-- End CSRF -->
+
+          <!-- Kanji -->
+          <div class="row collapse-margin-bottom">
+            <div class="form-group col s12">
+              <label for="kanji">Kanji:</label>
+              <input class="form-control" type="text" name="kanji"></input>
+            </div>
+          </div>
+          <!-- End Kanji -->
+
+          <!-- Romanji -->
+          <div class="row collapse-margin-bottom">
+            <div class="form-group col s12">
+              <label for="romanji">Romanji:</label>
+              <input class="form-control" type="text" name="romanji"></input>
+            </div>
+          </div>
+          <!-- End Romanji -->
+
+          <!-- Translation -->
+          <div class="row collapse-margin-bottom">
+            <div class="form-group col s12">
+              <label for="translation">Translation:</label>
+              <input class="form-control" type="text" name="translation"></input>
+            </div>
+          </div>
+          <!-- End Translation -->
+
+          <!-- Sentence -->
+          <div class="row collapse-margin-bottom">
+            <div class="form-group col s12">
+              <label for="sentence">Sentence:</label>
+              <input class="form-control" type="text" name="sentence"></input>
+            </div>
+          </div>
+          <!-- End Sentence -->
+
+          <!-- Description -->
+          <div class="row collapse-margin-bottom">
+            <div class="form-group col s12">
+              <label for="description">Description:</label>
+              <textarea class="form-control" name="description" rows="6"></textarea>
+            </div>
+          </div>
+          <!-- End Description -->
+
+          <!-- Action -->
+          <div class="row collapse-margin-bottom">
+            <div class="form-group col s12 center-container">
+              <div class="center-box">
+                <button class="btn waves-effect waves-light collapse-margin-bottom save-button" type="button">Add</button>
+                <a class="btn waves-effect waves-light collapse-margin-bottom cancel-button modal-action modal-close" href="#!">Cancel</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Action -->
+
+        </form>
+        <!-- End Form -->
+
+      </div>
+      <!-- End Form Container -->
+
+    </div>
+    <!-- End Container -->
+
+  </div>
+  <!-- End Content -->
+</div>

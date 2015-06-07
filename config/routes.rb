@@ -3,7 +3,31 @@ Blog::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'home#landing'
+
+  # Main menu
+  get 'post' => 'home#post'
+  get 'post/:id' => 'home#post_read'
+  get 'about' => 'home#about'
+  get 'project' => 'home#project'
+
+  # Japanese page
+  scope '/japanese' do
+    get '/' => 'japanese#index'
+    get 'novel' => 'japanese#novel'
+    get 'novel/:name' => 'japanese#novel_read'
+    get 'song' => 'japanese#song'
+    get 'song/:name' => 'japanese#song_read'
+  end
+
+  # Dashboard page
+  get 'signin' => 'dashboard#signin'
+  post 'signin' => 'dashboard#submit'
+  get 'signout' => 'dashboard#signout'
+  get 'newpost' => 'dashboard#post_new'
+  get 'newcategory' => 'dashboard#cat_new'
+  get 'newnovel' => 'dashboard#novel_new'
+  get 'newsong' => 'dashboard#song_new' 
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,171 @@
+<div class="container">
+	<div class="col s12">
+		<div class="card modify">
+
+      <!-- Card Content -->
+			<div class="card-content">
+
+        <!-- Title -->
+				<span class="card-title">New Song</span>
+
+        <!-- Content -->
+				<div class="row collapse-margin-bottom">
+
+          <!-- Form -->
+					<form accept-charset="UTF-8" class="col s12" action="" method="POST">
+						
+            <!-- CSRF -->
+            <div style="display:none">
+              <input name="utf8" type="hidden" value="&#x2713;" />
+              <input name="authenticity_token" type="hidden" value="x37DrAAwyIIb7s+w2+AdoCR8cAJIpQhIetKRrPgG5VA=" />
+            </div>
+            <!-- End CSRF -->
+
+            <!-- Title -->
+            <div class="row collapse-margin-bottom">
+							<div class="form-group col s12">
+								<label for="title">Title</label>
+								<input type="text" class="form-control" name="title">
+							</div>
+  					</div>
+            <!-- End Title -->
+
+            <!-- Display Picture -->
+  					<div class="row collapse-margin-bottom">
+							<div class="form-group col s12">
+						    <label for="displaypic">Display Picture</label>
+						    <input type="file" name="displaypic">
+    					</div>
+  					</div>
+            <!-- End Display Picture -->
+
+            <!-- Singer -->
+  					<div class="row collapse-margin-bottom">
+  						<div class="form-group col s12">
+  							<label for="singer">Singer</label>
+  							<input class="form-control" type="text"></input>
+  						</div>
+  					</div>
+            <!-- End Singer -->
+
+            <!-- Lyric -->
+            <div class="row collapse-margin-bottom">
+              <div class="form-group col s12">
+                <label for="lyric">Lyric</label>
+                <div>
+                  <a class="btn waves-effect waves-light modal-trigger" 
+                     id="add-lyric" href="#addlyric">Add</a>
+                </div>
+
+                <!-- Lyric Display -->
+                <div class="row collapse-margin-bottom">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s4">
+                        <a class="active" href="#kanji-dis">Kanji</a>
+                      </li>
+                      <li class="tab col s4">
+                        <a href="#romanji-dis">Romanji</a>
+                      </li>
+                      <li class="tab col s4">
+                        <a href="#english-dis">English</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="kanji-dis" class="col s12">
+                    <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div id="romanji-dis" class="col s12">
+                    <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div id="english-dis" class="col s12">
+                    <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                </div>
+                <!-- End Lyric Display -->
+                
+              </div>
+
+            </div>
+            <!-- End Lyric -->
+
+            <!-- Vocab -->
+            <div class="row collapse-margin-bottom">
+              <div class="form-group col s12">
+                <label for="vocab">Vocab</label>
+                <div>
+                  <a class="btn waves-effect waves-light modal-trigger" 
+                     id="add-vocab" href="#addvocab">Add</a>
+                </div>
+                
+                <!-- List -->
+                <ul class="collection collapse-margin-bottom">
+                  <li class="collection-item">Alvin
+                    <a href="#!" class="secondary-content delete-button">
+                      <i class="mdi-action-delete"></i>
+                    </a>
+                    <a href="#!" class="secondary-content edit-button">
+                      <i class="mdi-editor-mode-edit"></i>
+                    </a>
+                  </li>
+                  <li class="collection-item">Alvin
+                    <a href="#!" class="secondary-content delete-button">
+                      <i class="mdi-action-delete"></i>
+                    </a>
+                    <a href="#!" class="secondary-content edit-button">
+                      <i class="mdi-editor-mode-edit"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End List -->
+
+                <!-- Pagination -->
+                <div class="div-center">
+                  <ul class="pagination">
+                    <li class="disabled">
+                      <a href="#!">
+                        <i class="mdi-navigation-chevron-left"></i>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect">
+                      <a href="#!">
+                        <i class="mdi-navigation-chevron-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Pagination -->
+
+              </div>
+            </div>
+            <!-- End Vocab -->
+
+            <!-- Action -->
+  					<div class="row collapse-margin-bottom">
+  						<div class="form-group col s12 center-container">
+  							<div class="center-box">
+	  							<button class="btn waves-effect waves-light collapse-margin-bottom save-button" type="submit">Save</button>
+	  							<a class="btn waves-effect waves-light collapse-margin-bottom cancel-button" href="/japanese/song">Cancel</a>
+  							</div>
+  						</div>
+  					</div>
+            <!-- End Action -->
+
+					</form>
+          <!-- End Form -->
+          
+          <%= render partial: "dialog/song/vocab" %>
+          <%= render partial: "dialog/song/lyric" %>
+
+				</div>
+        <!-- End Content -->
+
+			</div>
+      <!-- End Card Content -->
+
+		</div>
+	</div>
+</div>

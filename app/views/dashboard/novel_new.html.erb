@@ -1,0 +1,172 @@
+<div class="container">
+	
+  <div class="col s12">
+		
+    <div class="card modify">
+			
+      <!-- Card Content -->
+      <div class="card-content">
+				
+        <!-- Title -->
+        <span class="card-title">New Novel</span>
+
+        <!-- Content -->
+				<div class="row collapse-margin-bottom">
+					
+          <!-- Form -->
+          <form accept-charset="UTF-8" class="col s12" action="" method="POST">
+            
+            <!-- CSRF -->
+            <div style="display:none">
+              <input name="utf8" type="hidden" value="&#x2713;" />
+              <input name="authenticity_token" type="hidden" value="x37DrAAwyIIb7s+w2+AdoCR8cAJIpQhIetKRrPgG5VA=" />
+            </div>
+            <!-- End CSRF -->
+
+            <!-- Title -->
+            <div class="row collapse-margin-bottom">
+							<div class="form-group col s12">
+								<label for="title">Title</label>
+								<input type="text" class="form-control">
+							</div>
+  					</div>
+            <!-- End Title -->
+  						
+            <!-- Display Picture -->
+            <div class="row collapse-margin-bottom">
+              <div class="form-group col s12">
+						    <label for="displaypic">Display Picture</label>
+						    <input type="file" name="displaypic">
+    					</div>
+  					</div>
+            <!-- End Display Picture -->
+  					
+            <!-- Author -->
+            <div class="row collapse-margin-bottom">
+  						<div class="form-group col s12">
+  							<label for="author">Author</label>
+  							<input class="form-control" type="text" name="author"></input>
+  						</div>
+  					</div>
+            <!-- End Author -->
+
+            <!-- Vocab -->
+            <div class="row collapse-margin-bottom">
+              <div class="form-group col s12">
+                <label for="vocab">Vocab</label>
+                <div>
+                  <a class="btn waves-effect waves-light modal-trigger" 
+                     id="add-vocab" href="#addvocab">Add</a>
+                </div>
+
+                <!-- List -->
+                <ul class="collection collapse-margin-bottom">
+                  <li class="collection-item">Alvin
+                    <a href="#!" class="secondary-content delete-button">
+                      <i class="mdi-action-delete"></i>
+                    </a>
+                    <a href="#!" class="secondary-content edit-button">
+                      <i class="mdi-editor-mode-edit"></i>
+                    </a>
+                  </li>
+                  <li class="collection-item">Alvin
+                    <a href="#!" class="secondary-content delete-button">
+                      <i class="mdi-action-delete"></i>
+                    </a>
+                    <a href="#!" class="secondary-content edit-button">
+                      <i class="mdi-editor-mode-edit"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End List -->
+
+                <!-- Pagination -->
+                <div class="div-center">
+                  <ul class="pagination">
+                    <li class="disabled">
+                      <a href="#!">
+                        <i class="mdi-navigation-chevron-left"></i>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect">
+                      <a href="#!">
+                        <i class="mdi-navigation-chevron-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Pagination -->
+              </div>
+            </div>
+            <!-- End Vocab -->
+
+            <!-- Other -->
+            <div class="row collapse-margin-bottom">
+              <div class="form-group col s12">
+                <label for="other">Other</label>
+                <div>
+                  <a class="btn waves-effect waves-light modal-trigger" 
+                     id="add-other" href="#addother">Add</a>
+                </div>
+                <ul class="collection">
+                  <li class="collection-item">Alvin
+                    <a href="#!" class="secondary-content delete-button">
+                      <i class="mdi-action-delete"></i>
+                    </a>
+                    <a href="#!" class="secondary-content edit-button">
+                      <i class="mdi-editor-mode-edit"></i>
+                    </a>
+                  </li>
+                  <li class="collection-item">Alvin
+                    <a href="#!" class="secondary-content delete-button">
+                      <i class="mdi-action-delete"></i>
+                    </a>
+                    <a href="#!" class="secondary-content edit-button">
+                      <i class="mdi-editor-mode-edit"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  					<!-- End Other -->
+
+            <!-- Content -->
+            <div class="row collapse-margin-bottom">
+  						<div class="form-group col s12">
+  							<label for="content">Content</label>
+  							<textarea class="form-control" name="content" rows="6"></textarea>
+  						</div>
+  					</div>
+            <!-- End Content -->
+
+            <!-- Action -->
+  					<div class="row collapse-margin-bottom">
+  						<div class="form-group col s12 center-container">
+  							<div class="center-box">
+	  							<button class="btn waves-effect waves-light collapse-margin-bottom save-button" type="submit">Save</button>
+	  							<a class="btn waves-effect waves-light collapse-margin-bottom cancel-button" href="/japanese/novel">Cancel</a>
+  							</div>
+  						</div>
+  					</div>
+            <!-- End Action -->
+
+					</form>
+          <!-- End Form -->
+
+          <%= render partial: "dialog/novel/vocab" %>
+          <%= render partial: "dialog/novel/other" %>
+
+        </div>
+        <!-- End Content -->
+
+      </div>
+      <!-- End Card Content -->
+
+    </div>
+	
+  </div>
+
+</div>

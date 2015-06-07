@@ -1,0 +1,78 @@
+
+<div class="container">
+	<div class="col s12">
+		<div class="card modify">
+			<div class="card-content">
+				<span class="card-title">New Post</span>
+				<div class="row collapse-margin-bottom">
+					<form accept-charset="UTF-8" class="col s12" action="" method="POST">
+						<div style="display:none">
+              <input name="utf8" type="hidden" value="&#x2713;" />
+              <input name="authenticity_token" type="hidden" value="x37DrAAwyIIb7s+w2+AdoCR8cAJIpQhIetKRrPgG5VA=" />
+            </div>
+            <div class="row collapse-margin-bottom">
+							<div class="form-group col s12">
+								<label for="title">Title</label>
+								<input type="text" class="form-control">
+							</div>
+  						</div>
+  						<div class="row collapse-margin-bottom">
+							<div class="form-group col s12">
+						        <label for="displaypic">Display Picture</label>
+						        <input type="file" name="displaypic">
+    						</div>
+  						</div>
+  						<div class="row collapse-margin-bottom">
+  							<div class="form-group col s12">
+  								<label for="category">Category</label>
+  								<select class="form-control">
+							      <option value="" disabled selected>Select Category</option>
+							      <option value="1">Option 1</option>
+							      <option value="2">Option 2</option>
+							      <option value="3">Option 3</option>
+							    </select>
+  							</div>
+  						</div>
+  						<div class="row collapse-margin-bottom">
+  							<div class="form-group col s12">
+  								<label for="tags">Tag</label>
+  								<input class="form-control" name="tags" id="tags"></input>
+  							</div>
+  						</div>
+              <div class="row collapse-margin-bottom">
+                <div class="form-group col s12">
+                  <label for="attachment">Attachment</label>
+                  <div>
+                    <a class="btn waves-effect waves-light insert-button btn modal-trigger" href="#attachment">Insert</a>
+                  </div>
+                  <div id="attachment" class="modal modal-fixed-footer">
+                    <div class="modal-content">
+                      <h4>Modal Header</h4>
+                      <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  						<div class="row collapse-margin-bottom">
+  							<div class="form-group col s12">
+  								<label for="content">Content</label>
+  								<textarea class="form-control" name="content" rows="6"></textarea>
+  							</div>
+  						</div>
+  						<div class="row collapse-margin-bottom">
+  							<div class="form-group col s12 center-container">
+  								<div class="center-box">
+	  								<button class="btn waves-effect waves-light collapse-margin-bottom save-button" type="submit">Save</button>
+	  								<a class="btn waves-effect waves-light collapse-margin-bottom cancel-button" href="/post">Cancel</a>
+  								</div>
+  							</div>
+  						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

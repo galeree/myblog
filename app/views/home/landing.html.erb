@@ -1,0 +1,23 @@
+
+<div class="container center-align landing-page">
+	<img class="circle responsive-img" src="/image/profile2.jpg"></img>
+	<h5>Geru__San</h5>
+	<p id="content"></p>
+	<a href="/post" class="btn btn-default">ENTER SITE</a>
+</div>
+<script type="text/javascript">
+	var content = "Just close your eyes. The sun is going down. You'll be alright. No one can hurt you now. Come morning light. You and I'll be safe and sound.";
+	var content_arr = content.split("");
+	var loopTimer;
+
+	function frameLooper() {
+		if(content_arr.length > 0) {
+			document.getElementById("content").innerHTML += content_arr.shift();
+		} else {
+			clearTimeout(loopTimer); 
+	        return false;
+		}
+		loopTimer = setTimeout('frameLooper()',30);
+	}
+	frameLooper();
+</script>

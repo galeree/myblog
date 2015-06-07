@@ -1,0 +1,119 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('.collapsible').collapsible({
+	      accordion : true
+	    });
+	    var target = $('.collapsible-header');
+	    var back = $('.back-link');
+	    target.click(function() {
+	    	var temp = $(this).parent("li");
+	    	if(temp.hasClass("active")) {
+	    		temp.find(".action").removeClass("mdi-hardware-keyboard-arrow-down")
+	    			.addClass("mdi-hardware-keyboard-arrow-right");
+	    	}else {
+	    		temp.find(".action").removeClass("mdi-hardware-keyboard-arrow-right")
+	    			.addClass("mdi-hardware-keyboard-arrow-down");
+	    	}
+	    });
+
+	    back.click(function() {
+	    	location.href = "/japanese/novel";
+	    });
+  	});
+</script>
+<div class="banner-img">
+	<img class="responsive-img" src="/image/banner.jpg"></img>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<div class="card novel-card">
+				<div class="card-image">
+					<img src="/image/accelworld.jpg">
+				</div>
+				<div class="card-content">
+					<span class="card-title dec">Accel World</span>
+					<p class="word-count">Words: 20</p>
+					<p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+				</div>
+				<div class="card-action">
+					<li class="collapsible-header back-link">
+						<i class="mdi-action-home"></i>Back
+					</li>
+					<ul class="collapsible" data-collapsible="accordion">
+						<li>
+							<div class="collapsible-header">
+								<i class="mdi-hardware-keyboard-arrow-right action"></i>Search
+							</div>
+							<div class="collapsible-body">
+								<div class="novel-search">
+									<div class="row">
+										<div class="input-field col s10">
+											<input placeholder="Search here" type="text">
+										</div>
+										<div class="col s2 novel-search-button">
+											<a class="waves-effect waves-light btn">
+												<i class="mdi-action-search"></i>
+											</a>
+										</div>
+									</div>	
+									Search Result
+								</div>
+							</div>
+						</li>
+					    <li>
+							<div class="collapsible-header">
+								<i class="mdi-hardware-keyboard-arrow-right action"></i>Vocab
+							</div>
+							<div class="collapsible-body">
+					      		<ul class="collection">
+					      			<li class="collection-item">
+					      				<div>
+					      					<p>心</p>
+					      					<p><span>こころ</span> (<span>kokoro</span>)</p>
+					      					<p>หัวใจ</p>
+					      				</div>
+					      			</li>
+					      			<li class="collection-item">
+					      				<p>好き</p>
+					      				<p><span>すき</span> (<span>suki</span>)</p>
+					      				<p>ชอบ</p>
+					      			</li>
+					      			<li class="collection-item">
+					      				<div class="div-center">
+						      				<ul class="pagination">
+											    <li class="disabled">
+											    	<a href="#!">
+											    		<i class="mdi-navigation-chevron-left">
+											    		</i>
+											    	</a>
+											    </li>
+											    <li class="active"><a href="#!">1</a></li>
+											    <li class="waves-effect"><a href="#!">2</a></li>
+											    <li class="waves-effect"><a href="#!">3</a></li>
+											    <li class="waves-effect"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
+											  </ul>
+					      				</div>
+					      			</li>
+					      		</ul>
+							</div>
+					    </li>
+					    <li>
+							<div class="collapsible-header">
+								<i class="mdi-hardware-keyboard-arrow-right action"></i>Other
+							</div>
+							<div class="collapsible-body">
+								<ul class="collection">
+									<li class="collection-item">
+										<p>Lorem ipsum dolor sit amet.</p>
+									</li>
+								</ul>
+							</div>
+					    </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

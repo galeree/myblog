@@ -1,0 +1,123 @@
+
+$mediumblue: #29B6F6;
+
+/* Default */
+
+body {
+	background-color: #00b0ff;
+	height: 100%;
+	&>div.container {
+		margin-left: 5%;
+	}
+}
+
+/* ------------------------------------------------------------------------ */
+
+.collapse-margin-bottom {
+  margin-bottom: 0;
+}
+
+div.landing-page {
+	background-color: white;
+	border-radius: 10px;
+	height: 64%; 
+	position: absolute;
+	width: 90%; 
+	top: 18%;
+	h5 {
+		font-weight: bold;
+	}
+    p {
+    	text-align: justify;
+    	font-size: 1.3rem;
+    	padding: 2% 5%;
+    	min-height: 36%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+    .btn.btn-default {
+    	background-color: #03A9F4;
+    	border: 0px;
+    	border-radius: 0px;
+    	color: white;
+    	transition: background-color .6s;
+	    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    	&:hover {
+    		background-color: #1565C0;
+    	}
+    }
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  margin-top: 8%;
+}
+
+/* ------------------------------------------------------------------------ */
+/* ----------------------------- Sign in Page ----------------------------- */
+
+div.signin-page {
+  background-color: white;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  border-radius: 10px;
+  height: 54%; 
+  position: absolute;
+  width: 90%; 
+  top: 23%;
+  h5 {
+    font-weight: bold;
+  }
+    p {
+      text-align: justify;
+      font-size: 1.3rem;
+      padding: 2% 5%;
+      min-height: 36%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+    .btn.btn-default {
+      background-color: #03A9F4;
+      border: 0px;
+      border-radius: 0px;
+      color: white;
+      transition: background-color .6s;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      &:hover {
+        background-color: #1565C0;
+      }
+    }
+}
+
+.signin {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    padding: 1.2rem 1rem;
+    font-size: 14px;
+    line-height: 1.4rem;
+    color: $mediumblue;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0;
+    box-sizing: border-box;
+    &:focus {
+      border-bottom: 1px solid #ccc;
+      box-shadow: none;
+      border-color: $mediumblue;
+    }
+  }
+}
+
+
+/* ------------------------------------------------------------------------ */

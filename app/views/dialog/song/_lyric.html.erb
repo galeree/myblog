@@ -1,0 +1,79 @@
+<div id="addlyric" class="modal">
+  
+  <!-- Content -->
+  <div class="modal-content">
+
+    <!-- Container -->
+    <div class="col s12">
+
+      <!-- Form Container -->
+      <div class="row collapse-margin-bottom">
+        
+        <!-- Form -->
+        <form accept-charset="UTF-8" class="col s12" 
+              action="" method="POST">
+
+          <!-- CSRF -->
+          <div style="display:none">
+            <input name="utf8" type="hidden" value="&#x2713;" />
+            <input name="authenticity_token" type="hidden" 
+                   value="x37DrAAwyIIb7s+w2+AdoCR8cAJIpQhIetKRrPgG5VA=" />
+          </div>
+          <!-- End CSRF -->
+          
+          <!-- Lyric -->
+          <div class="row collapse-margin-bottom">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s4">
+                  <a class="active" href="#kanji">Kanji</a>
+                </li>
+                <li class="tab col s4">
+                  <a href="#romanji">Romanji</a>
+                </li>
+                <li class="tab col s4">
+                  <a href="#english">English</a>
+                </li>
+              </ul>
+            </div>
+            <div id="kanji" class="col s12">
+              <div class="form-group">
+                <textarea class="form-control" name="kanji" rows="20"></textarea>
+              </div>
+            </div>
+            <div id="romanji" class="col s12">
+              <div class="form-group">
+                <textarea class="form-control" name="romanji" rows="20"></textarea>
+              </div>
+            </div>
+            <div id="english" class="col s12">
+              <div class="form-group">
+                <textarea class="form-control" name="english" rows="20"></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- End Lyric -->
+
+          <!-- Action -->
+          <div class="row collapse-margin-bottom">
+            <div class="form-group col s12 center-container">
+              <div class="center-box">
+                <button class="btn waves-effect waves-light collapse-margin-bottom save-button" type="button">Save</button>
+                <a class="btn waves-effect waves-light collapse-margin-bottom cancel-button modal-action modal-close" href="#!">Cancel</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Action -->
+
+        </form>
+        <!-- End Form -->
+
+      </div>
+      <!-- End Form Container -->
+
+    </div>
+    <!-- End Container -->
+
+  </div>
+  <!-- End Content -->
+</div>
